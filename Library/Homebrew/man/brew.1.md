@@ -14,13 +14,13 @@ Homebrew is the easiest and most flexible way to install the UNIX tools Apple di
 ## OPTIONS
 
  * `-v`, `--verbose`:
-   Print extra debugging imformation
+   Print extra debugging information
 
  * `--prefix`:
    Display the current install path for Homebrew
 
  * `--cache`:
-   Cache
+   Display the current cache path for Homebrew
 
  * `-v`, `--version`:
    Print the version number of brew to standard error.
@@ -44,7 +44,7 @@ Homebrew is the easiest and most flexible way to install the UNIX tools Apple di
    Lists the installed files for <FORMULA>
 
  * `info --github `<FORMULA>:
- Open your browser at the Github History page for formula <FORMULA>
+ Open your browser at the GitHub History page for formula <FORMULA>
 
  * `info`:
    Summarises all installed Homebrew packages
