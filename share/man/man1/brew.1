@@ -1,0 +1,123 @@
+.\" generated with Ronn/v0.4.1
+.\" http://github.com/rtomayko/ronn/
+.
+.TH "BREW" "1" "March 2010" "Homebrew" "brew"
+.
+.SH "NAME"
+\fBbrew\fR \-\- brew(1) Homebrew User Manual
+.
+.SH "SYNOPSIS"
+.
+.nf
+`brew` command [formula] ...
+`brew` [\-\-prefix] [\-\-cache] [\-\-version|\-v]
+`brew` [\-\-verbose|\-v]
+.
+.fi
+.
+.SH "DESCRIPTION"
+Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn't include with OS X.
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Print extra debugging imformation
+.
+.TP
+\fB\-\-prefix\fR
+Install prefix
+.
+.TP
+\fB\-\-cache\fR
+Cache
+.
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Print the version number of brew to standard error.
+.
+.TP
+\fBsearch\fR
+Lists all formula that you can install
+.
+.TP
+\fBsearch <FORMULA>\fR
+Searches for \fIFORMULA\fR in formula available to install
+.
+.TP
+\fBsearch /<FORMULA>/\fR
+Same as above but parses /\fIFORMULA\fR/ as a regex
+.
+.TP
+\fBinstall <FORMULA>\fR
+Installs \fIFORMULA\fR
+.
+.TP
+\fBlist\fR
+Lists all installed formulae
+.
+.TP
+\fBlist <FORMULA>\fR
+Lists the installed files for \fIFORMULA\fR
+.
+.TP
+\fBinfo \-\-github\fR\fIFORMULA\fR
+Open your browser at the Github History page for formula \fIFORMULA\fR
+.
+.TP
+\fBinfo\fR
+Summarises all installed Homebrew packages
+.
+.TP
+\fBinfo <FORMULA>\fR
+Gives all available information for installed or not installed formula \fIFORMULA\fR
+.
+.TP
+\fBhome\fR
+Open's Homebrew's homepage in your default browser
+.
+.TP
+\fBhome <FORMULA>\fR
+Opens \fIFORMULA\fR's homepage in your default browser
+.
+.TP
+\fBremove <FORMULA>\fR
+Uninstalls \fIFORMULA\fR
+.
+.TP
+\fBcreate <URL>\fR
+Generates a formula for the downloadable file at url and opens it in TextMate
+Homebrew will attempt to automatically derive the formula name and version, if it fails, you'll have to make your own template. I suggest copying wget's.
+.
+.TP
+\fBcreate \-\-macports <FORMULA>\fR
+Open your browser at the macports package search page, so you can see how they do \fIFORMULA\fR
+.
+.TP
+\fBedit <FORMULA>\fR
+Opens the formula in TextMate
+.
+.TP
+\fBlink <FORMULA>\fR
+Symlinks all of \fIFORMULA\fR's installed files into the Homebrew prefix
+This is done automatically when you install formula. It is useful for DIY installation, or in cases where you want to swap out different versions of the same package that you have installed at the same time.
+.
+.TP
+\fBunlink <FORMULA>\fR
+Unsymlinks \fIFORMULA\fR from the Homebrew prefix
+.
+.TP
+\fBprune\fR
+Removes dead symlinks from the Homebrew prefix
+This is generally not needed. However, it can be useful if you are doing DIY installations.
+.
+.TP
+\fBoutdated\fR
+Shows formula that have an updated version available
+.
+.SH "SEE ALSO"
+.
+.IP "\(bu" 4
+\fIHomebrew Wiki\fR
+.
+.IP "" 0
